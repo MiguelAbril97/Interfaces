@@ -3,18 +3,22 @@ p{
 }
 
 .superior div{
-    left: 5%;
-    padding-left: 40%;
-    padding-bottom: 50px;
-    display: inline-block;
-    position:relative;
     background-color: green;
-    
+    height: 10%;
 }
 
-.superiorDerecha{  
-    top:0%;
+@media(width>=1300px){
+   .superior div{
+    background-color: aqua;
+   }
 }
+
+@media (width>=800px){
+    .superior div{
+        background-color: orangered;
+       }
+}
+
 .medio{
     height: 30vh;
     background-color: yellow;
