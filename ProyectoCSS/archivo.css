@@ -4,6 +4,7 @@ header {
     align-items: center;    
    justify-content: space-between;
    background-color: lightcoral;
+   position: sticky;
 }
 
 .logo{
@@ -14,7 +15,6 @@ header {
     background-image: url("media/network_2622199.png");
     background-repeat: no-repeat;
     background-size: contain;
-    position: sticky;
 }
 
 
@@ -24,6 +24,11 @@ header {
     display:flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    
+}
+
+.navbar a{
+    font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
 }
 
@@ -46,8 +51,12 @@ header {
     flex-wrap: wrap;
    flex-grow: 1;
     justify-content:space-around;
+    height: 60vh;
    
 
+}
+
+.perfil p{
 }
 
 .fotoPerfil{
@@ -77,11 +86,34 @@ header {
 footer{
     border: 2px solid black;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }
 
+footer div{
+    border: 2px solid black;
+}
+
+.footer1{
+    padding: 0%;
+    flex-grow: 1;
+
+}
+
+.footer2{
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+}
 
 
+.footer2 ul li{
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer3{
+    flex-grow: 1;
+}
 
 /*(480px o más)*/
