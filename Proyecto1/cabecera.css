@@ -1,0 +1,50 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    display: flex;
+    grid-area: cabecera;
+    justify-content: space-between; 
+    align-items: center;
+    background-color: #2E5231;
+}
+
+/* Logo */
+.logo {
+    background-image: url("/home/alumnado/Descargas/pruebaLogo.jpg");
+    width: 150px; /* Ajuste proporcional del tamaño del logo */
+    height: 150px; /* Mantiene el logo dentro de la altura total del header */
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* Navigation */
+.nav-cabecera {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap; /* Evita que los enlaces se vayan a una segunda línea */
+    width: 70%; /* El nav ocupa un 70% del header */
+}
+
+.nav-cabecera a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    font-size: 1.2rem; /* Tamaño de letra ajustado */
+    transition: background-color 0.3s ease; /* Transición en hover */
+    border-radius: 5px;
+    text-align: center; /* Centra el texto dentro de los enlaces */
+    margin: 0 10px;
+    flex-grow: 1;
+}
+
+.nav-cabecera a:hover {
+    background-color: #588C46;
+}
