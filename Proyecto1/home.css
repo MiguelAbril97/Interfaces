@@ -9,7 +9,7 @@
     "footer footer footer";
 }
 
-.imagenes{
+#imagenes{
     grid-area: contenido;
     border: solid black;
     height: 100%;
@@ -18,8 +18,8 @@
 
 }
 
-.image1{
-    background-image: url('https://i.pinimg.com/originals/fa/af/14/faaf14037f3a2d97491485a4e614ee0b.jpg');
+.imagen1{
+    background-image: url('media/mapa-tierra-media.jpg');
     background-size: contain;
     background-repeat: no-repeat;
 }
