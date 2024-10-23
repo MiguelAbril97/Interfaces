@@ -1,65 +1,9 @@
-body {
-    margin: 0;
-    padding: 0;
-}
-
 .envoltura {
     display: grid;
-    height: 100vh;
-    grid-template-areas: 
+    grid: 
     "cabecera cabecera cabecera"
-    "imagenes imagenes imagenes"
-    "imagenes imagenes imagenes"
-    "imagenes imagenes imagenes"
+    "conetenido conetenido contenido"
+    "conetenido conetenido contenido"
+    "conetenido conetenido contenido"
     "footer footer footer";
 }
-
-/* Header */
-header {
-    display: flex;
-    grid-area: cabecera;
-    justify-content: space-between; /* Espaciado entre logo y nav */
-    align-items: center; /* Centramos los elementos verticalmente */
-    background-color: #2E5231; /* Color del header según tu preferencia */
-    height: 100%; /* El header ocupará toda el área asignada por el grid */
-}
-
-/* Logo */
-.logo {
-    background-image: url("/home/alumnado/Descargas/pruebaLogo.jpg");
-    width: 30%; /* Ajuste proporcional del tamaño del logo */
-    height: 100%; /* Mantiene el logo dentro de la altura total del header */
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-/* Navigation */
-nav {
-    display: flex;
-    justify-content: space-around; /* Distribución uniforme de los enlaces */
-    align-items: center;
-    flex-wrap: nowrap; /* Evita que los enlaces se vayan a una segunda línea */
-    width: 70%; /* El nav ocupa un 70% del header */
-}
-
-nav a {
-    text-decoration: none;
-    color: white; /* Color de los enlaces en blanco */
-    padding: 10px 15px; /* Espaciado interno */
-    font-size: 1.2rem; /* Tamaño de letra ajustado */
-    transition: background-color 0.3s ease; /* Transición en hover */
-    border-radius: 5px; /* Bordes redondeados */
-    text-align: center; /* Centra el texto dentro de los enlaces */
-    margin: 0 10px; /* Espaciado entre enlaces para evitar que se junten */
-    flex-grow: 1; /* Los enlaces se ajustan dinámicamente */
-}
-
-nav a:hover {
-    background-color: #588C46; /* Color de fondo al pasar el ratón */
-}
-
-/* Otros ajustes */
-a:focus, a:hover {
-    outline: none; /* Eliminamos el borde al hacer focus o hover */
-}
-
