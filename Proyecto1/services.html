@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="cabecera.css">
+    <link rel="stylesheet" href="services.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="envoltura">
+        <header class="cabecera">
+            <nav class="nav-cabecera">
+                <a href="home.html" target="_blank" class="enlaces" id="home">Home</a>
+                <a href="services.html" target="_blank" class="enlaces" id="services">Services</a>
+                <a href="#testimonial" class="enlaces" id="enlace-testimonials">
+                    View Testimonials                
+                </a>
+            </nav>
+        </header>
+
+        <div class="busqueda">
+            <div class="formulario">
+                <div class="destino">
+                    <input type="text" placeholder="Buscar destino" class="input-destino">
+                </div>
+               
+                <div class="personas">
+                    <label for="numero-viajeros">Número de viajeros:</label>
+                    <input type="number" id="numero-viajeros" min="1" value="1" class="input-viajeros">
+                </div>
+                
+                <div class="menu-fecha">
+                    <label for="fecha-viaje">Selecciona la fecha:</label>
+                    <input type="date" id="fecha-viaje" class="input-fecha">
+                    <button id="btn-buscar">Buscar</button>
+                </div>
+                
+   
+            </div>
+            <div class="guias" id="guias">
+              
+                <div class="guia">
+                    <img src="media/guias/legolas.jpeg" class="foto-guia">
+                    <div class="descripcion-guia">
+                        <h3>Legolas</h3>
+                        <p> Soy Legolas, un elfo de los bosques de Mirkwood. 
+                            Te ofrezco un recorrido a través de los bosques encantados, 
+                            donde la naturaleza cobra vida de una manera que pocos han visto. </p>
+                    </div>
+                </div>
+
+                <div class="guia">
+                    <img src="media/guias/aragorn.jpeg" class="foto-guia">
+                    <div class="descripcion-guia">
+                        <h3>Aragorn</h3>
+                        <p>Soy Aragorn, hijo de Arathorn, y tengo el honor de ser el guardián de los caminos de la Tierra Media. 
+                            Puedo guiarte por las montañas y bosques, mostrándote los senderos de los antiguos reinos. 
+                            Aprenderás sobre el legado de los Dúnedain y la importancia de la unidad entre las razas.</p>
+                   </div>
+                </div>
+
+                <div class="guia">
+                    <img src="media/guias/gandalf.jpeg" class="foto-guia">
+                    <div class="descripcion-guia">
+                        <h3>Gandalf</h3>
+                        <p> 
+                            Soy Gandalf, un viajero y guía sabio. Si buscas aventura y conocimiento, 
+                            te llevaré a los lugares más intrigantes de la Tierra Media. 
+                            Desde las antiguas ruinas de Isengard hasta la majestuosa Rivendel, 
+                            compartiré contigo las historias de la lucha entre la luz y la oscuridad.
+                        </p>
+                   </div>
+                </div>
+
+                <div class="guia">
+                    <img src="media/guias/pippin.jpeg" class="foto-guia">
+                    <div class="descripcion-guia">
+                        <h3>Pippin</h3>
+                        <p>Soy Pippin, un hobbit de la Comarca y miembro de la Comunidad del Anillo. 
+                            Si estás buscando diversión, probar la mejor hierba de pipa y un poco de aventura, 
+                            ¡estás en el lugar correcto!</p>
+                   </div>
+                </div>
+                
+                <div class="guia">
+                    <img src="media/guias/sauron.jpeg" class="foto-guia">
+                    <div class="descripcion-guia">
+                        <h3>Sauron</h3>
+                        <p>No te puedo guiar porque soy un ojo. Pero te puedo mirar como nunca nadie te ha mirado antes</p>
+                   </div>
+                </div>
+
+                <div class="guia">
+                    <img src="media/guias/gimli.jpg" class="foto-guia">
+                    <div class="descripcion-guia">
+                        <h3>Gimli</h3>
+                        <p>Soy Gimli, hijo de Glóin, un orgulloso enano de las Montañas Nubladas.
+                         Si buscas una experiencia única, puedo guiarte a través de las majestuosas montañas y las minas de Moria. </p>
+                   </div>
+                </div>
+            
+            </div>
+        </div>
+
+        <div class="explorar-paquetes">
+            <h2>Explore packages</h2>
+            
+            <div class="paquetes">
+
+                <div class="paquete" id="paquete1">
+                  <div class="descripcion-paquete">
+                    <h3>Explorador élfico</h3>
+                    <ul> 
+                        <li>Descubre las cascadas y bosques encantados con un guía élfico.</li>
+                        <li>Descansa en los elegantes salones de Rivendell</li>
+                        <li>Aprende sobre la música, artes y tradiciones élficas</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="paquete" id="paquete2">
+                    <div class="descripcion-paquete">
+                        <h3>Enano minero</h3>
+                        <ul> 
+                            <li>Explora las minas y túneles legendarios de Moria.</li>
+                            <li>Conoce la rica historia y las leyendas de los enanos.</li>
+                            <li>Viaja con guías expertos en seguridad subterránea.</li>
+                        </ul>
+                      </div>
+                </div>
+
+
+                <div class="paquete" id="paquete3">
+                    <div class="descripcion-paquete">
+                        <h3>Paquete del Guerrero</h3>
+                        <ul> 
+                            <li>Visita la impresionante ciudadela y sus murallas.</li>
+                            <li>Participa en actividades de entrenamiento marcial.</li>
+                            <li>Sumérgete en las épicas historias de los reyes y batallas</li>
+                        </ul>
+                      </div>
+                </div>
+
+                <div class="paquete" id="paquete4">
+                    <div class="descripcion-paquete">
+                        <h3>Tranquilidad Hobbit</h3>
+                        <ul> 
+                            <li>Recorrido por los verdes campos y aldeas hobbits.</li>
+                            <li>Disfruta de las delicias culinarias de la Comarca.</li>
+                            <li>Prueba la mejor hierba de pipa</li>
+                        </ul>
+                      </div>
+                </div>
+
+            </div>
+        </div>
+        
+        
+ 
+          
+    <footer class="footer">
+        <div>
+            <nav class="nav-footer">
+                <a href="services.html" target="_blank">Explore Packages</a>
+                <a href="#testimonials">View testimonials</a>
+                <a href="">Privacy Policy</a>
+            </nav>
+        
+           
+        </div>
+      
+        <div class="social">
+            <p>Find us</p>
+            <div class="iconos">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-tiktok"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-pinterest"></i>
+            </div>
+           
+        </div>
+
+    </footer>
+    
+
+    </div>
+</body>
+
+<script>
+    document.getElementById("btn-buscar").addEventListener("click", function() {
+    
+    const guias = document.querySelector("#guias");
+    guias.style.display = "grid";
+       
+    });
+</script>
+
+</html>

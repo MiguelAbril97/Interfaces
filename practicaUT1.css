@@ -1,0 +1,28 @@
+header #logotipo{
+    display: block;
+    background-color: red;
+    font-size: large;
+    height: 40pt;
+    text-align: center;
+}
+
+header #introduccion{
+    display: inline-block;background-color: lightblue;
+}
+
+nav.navegacion{
+     word-spacing: 20pt;
+}
+
+.navegacion a{
+    display: inline-block;
+}
+
+.navegacion:nth-child(even){
+    background-color: brown;
+}
+
+.about{
+    display: inline-block;width: 50%;
+    background-color: lightblue;
+}

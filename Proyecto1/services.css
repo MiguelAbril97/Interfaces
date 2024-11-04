@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color:#F5F5DC ;
+}
+
+.envoltura {
+    display: grid;
+    grid-template-areas: 
+    "cabecera cabecera cabecera"
+    "busqueda busqueda busqueda"
+    "guias guias guias"
+    "paquetes paquetes paquetes"
+    "footer footer footer";
+    width: 100%;
+}
+
+.busqueda{
+    grid-area: busqueda;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #8B4513;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.formulario{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.destino input{
+    width: 90vh; 
+}
+
+#btn-buscar{
+    max-width: 100px;
+}
+
+
+.guias{
+    grid-area: guias;
+    display: none;
+    grid-template-columns:repeat(3,1fr);
+    gap: 20px;
+    padding: 5%;
+}
+
+.guia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #F5F5DC;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.foto-guia{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+
+/*Explorar paquetes*/
+
+.explorar-paquetes{
+    grid-area: paquetes;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.explorar-paquetes h2{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #8B4513;
+}
+
+.paquetes{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    gap: 20px; /* Espacio entre las imágenes */
+    padding-bottom: 20px;
+    padding-top: 20px;
+    width: 100%; /* Ancho completo de la pantalla */
+    margin: auto; 
+}
+
+@media (max-width: 768px) {
+    .paquetes {
+        grid-template-columns: 1fr; 
+    }
+    .formulario{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .guias {
+        grid-template-columns: 1fr; 
+    }
+}
+
+
+.paquete{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    height: 300px;
+}
+
+#paquete1{
+    background-image: url("media/paquetes/elfos.jpeg");
+    background-size:  cover;
+}
+#paquete2{
+    background-image: url("media/paquetes/enanos.jpeg");
+    background-size:  cover;
+}
+
+#paquete3{
+    background-image: url("media/paquetes/gondor.jpg");
+    background-size:  cover;
+}
+
+#paquete4{
+    background-image: url('media/galeria_destinos/imagen4.jpg');
+    background-size: cover;
+}
+
+.paquete:hover {
+    transform: scale(1.05); /* Aumenta la escala ligeramente */
+}
+
+.descripcion-paquete {
+    background: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
+    color: white;
+    padding: 20px; /* Le doy tamaño para que el sombreado se vea mejor*/
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.descripcion-paquete:hover{
+    opacity: 1;
+}
+
+.descripcion-paquete h3 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.descripcion-paquete li {
+    list-style: none;
+    margin: 5px 0 0;
+    font-size: 1rem;
+}

@@ -1,0 +1,119 @@
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;    
+   justify-content: space-between;
+   background-color: lightcoral;
+   position: sticky;
+}
+
+.logo{
+    border: 2px solid beige;
+    width: 50%;
+    height: 20vh;
+    border-radius: 6px;
+    background-image: url("media/network_2622199.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+
+.navbar{
+    width: 30%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.navbar a{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    text-decoration: underline;
+}
+
+.principal{
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.perfil{
+    border: 2px solid black;
+    display: flex;
+    flex-wrap: wrap;
+   flex-grow: 1;
+    justify-content:space-around;
+    height: 60vh;
+   
+
+}
+
+.perfil p{
+}
+
+.fotoPerfil{
+    background-position: center;
+    background-image: url("media/foto1.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+
+.feed{
+    border: 2px solid black;
+    display: flex;
+    flex-grow: 1;
+    background-color: aquamarine;
+
+}
+
+.sidebar{
+    background-color: chocolate;
+    display: flex;
+    flex-grow: 1;
+
+}
+
+footer{
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer div{
+    border: 2px solid black;
+}
+
+.footer1{
+    padding: 0%;
+    flex-grow: 1;
+
+}
+
+.footer2{
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+}
+
+
+.footer2 ul li{
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer3{
+    flex-grow: 1;
+}
+
+/*(480px o más)*/

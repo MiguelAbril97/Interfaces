@@ -1,0 +1,39 @@
+p{
+    text-align: center;
+}
+
+.superior div{
+    background-color: green;
+    height: 10%;
+}
+
+@media(width>=1300px){
+   .superior div{
+    background-color: aqua;
+   }
+}
+
+@media (width>=800px){
+    .superior div{
+        background-color: orangered;
+       }
+}
+
+.medio{
+    height: 30vh;
+    background-color: yellow;
+    left: 67px;
+    right: 67px;
+}
+
+.medioInferior div{
+    background-color: lightblue;
+}
+
+.inferior div{
+    display: inline-block;
+    background-color: coral;
+    width: 40vh;
+    margin-left: 60px;
+
+}

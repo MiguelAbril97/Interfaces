@@ -1,0 +1,35 @@
+p{
+    text-align: center;
+}
+
+.superior div{
+    left: 5%;
+    padding-left: 40%;
+    padding-bottom: 50px;
+    display: inline-block;
+    position:relative;
+    background-color: green;
+    
+}
+
+.superiorDerecha{  
+    top:0%;
+}
+.medio{
+    height: 30vh;
+    background-color: yellow;
+    left: 67px;
+    right: 67px;
+}
+
+.medioInferior div{
+    background-color: lightblue;
+}
+
+.inferior div{
+    display: inline-block;
+    background-color: coral;
+    width: 40vh;
+    margin-left: 60px;
+
+}

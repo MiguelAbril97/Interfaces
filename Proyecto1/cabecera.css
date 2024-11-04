@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+header {
+    display: flex;
+    grid-area: cabecera;
+    justify-content: center; 
+    align-items: center;
+    background-image: url("media/cabecera.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 180px;
+}
+
+/* Navigation */
+.nav-cabecera {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-cabecera a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    font-size: 1.2rem; /* Tamaño de letra ajustado */
+    transition: background-color 0.3s ease; /* Transición en hover */
+    border-radius: 5px;
+    text-align: center; /* Centra el texto dentro de los enlaces */
+    margin: 0 10px;
+
+}
+
+.nav-cabecera a:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Color de fondo semitransparente */
+    color: #fff;
+}
