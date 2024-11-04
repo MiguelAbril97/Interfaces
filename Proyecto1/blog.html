@@ -1,30 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Blog</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog de Viajes por la Tierra Media</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    
-    <header class="flex flex-col md:flex-row stycky md:items-center top-0 w-full bg-green-700 h-24">
-        <div class="basis-1/2 bg-red-300"></div>
+<body class="bg-gray-100 text-gray-800 font-sans">
 
-        <div class="basis-1/2 flex justify-evenly">
-            <a>Home</a>
-            <a>About Us</a>
-            <a>Categories</a>
+  <!-- Header -->
+  <header class="bg-gray-900 text-white shadow-lg">
+    <div class="container mx-auto p-6 flex flex-col md:flex-row justify-between items-center">
+      <h1 class="text-3xl font-bold tracking-wide">Viajes por la Tierra Media</h1>
+      <nav class="flex flex-row justify-evenly md:justify-between">
+        <a href="#inicio" class="text-white px-4 py-2 rounded-md hover:bg-white hover:bg-opacity-20 transition duration-300">Inicio</a>
+        <a href="#articulos" class="text-white px-4 py-2 rounded-md hover:bg-white hover:bg-opacity-20 transition duration-300">Artículos</a>
+        <a href="#contacto" class="text-white px-4 py-2 rounded-md hover:bg-white hover:bg-opacity-20 transition duration-300">Contacto</a>
+      </nav>      
+    </div>
+  </header>  
+
+  <section class="bg-[url('media/rivendell.jpg')] bg-cover bg-center h-[80vh] text-white flex flex-col items-center justify-end text-center p-6">
+    <h2 class="text-5xl font-bold drop-shadow-lg mb-4">Explora la Tierra Media</h2>
+    <p class="text-lg max-w-2xl drop-shadow-md">
+      Adéntrate en los paisajes místicos y épicos de la Tierra Media. Desde las majestuosas torres de Minas Tirith hasta los verdes valles de Rivendel, cada rincón tiene una historia que contar. Únete a nuestra travesía y descubre los secretos, leyendas y maravillas de este mundo fascinante.
+    </p>
+  </section>
+
+ 
+  <main class="container mx-auto p-6" style="background-color: #F5F5DC;">
+
+   
+    <section id="articulos" class="flex flex-col mt-8">
+      <h3 class="text-2xl font-semibold mb-4">Últimos Artículos</h3>
+     
+      <!-- Grid de Posts -->
+      <div class="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+        
+      
+        <div class="bg-cover bg-center h-64 rounded-lg shadow-lg text-white p-4 flex flex-col justify-end" style="background-image: url('https://via.placeholder.com/400');">
+          <a href="#post1" class="text-xl font-bold hover:underline">Título del Post 1</a>
+          <p class="text-sm mt-1">Subtítulo interesante del viaje</p>
+          <span class="text-xs text-gray-300 mt-2">Por: Autor 1</span>
         </div>
-    </header>
+        
+    
+        <div class="bg-cover bg-center h-64 rounded-lg shadow-lg text-white p-4 flex flex-col justify-end" style="background-image: url('https://via.placeholder.com/400');">
+          <a href="#post2" class="text-xl font-bold hover:underline">Título del Post 2</a>
+          <p class="text-sm mt-1">Subtítulo interesante del viaje</p>
+          <span class="text-xs text-gray-300 mt-2">Por: Autor 2</span>
+        </div>
 
-    <div class="bg-[url('media/rivendell.jpg')] md:bg-cover bg-no-repeat w-full h-96 flex flex-col justify-end items-center">
-      <div class="flex flex-col shadow-black">
-        <h1>Texto de ejemplo</h1>
-        <p>Cuerpo de la descripcion del blog</p>
+     
+        <div class="bg-cover bg-center h-64 rounded-lg shadow-lg text-white p-4 flex flex-col justify-end" style="background-image: url('https://via.placeholder.com/400');">
+          <a href="#post3" class="text-xl font-bold hover:underline">Título del Post 3</a>
+          <p class="text-sm mt-1">Subtítulo interesante del viaje</p>
+          <span class="text-xs text-gray-300 mt-2">Por: Autor 3</span>
+        </div>
+
+       
+        <div class="bg-cover bg-center h-64 rounded-lg shadow-lg text-white p-4 flex flex-col justify-end" style="background-image: url('https://via.placeholder.com/400');">
+          <a href="#post4" class="text-xl font-bold hover:underline">Título del Post 4</a>
+          <p class="text-sm mt-1">Subtítulo interesante del viaje</p>
+          <span class="text-xs text-gray-300 mt-2">Por: Autor 4</span>
+        </div>
+
+     
+        <div class="bg-cover bg-center h-64 rounded-lg shadow-lg text-white p-4 flex flex-col justify-end" style="background-image: url('https://via.placeholder.com/400');">
+          <a href="#post5" class="text-xl font-bold hover:underline">Título del Post 5</a>
+          <p class="text-sm mt-1">Subtítulo interesante del viaje</p>
+          <span class="text-xs text-gray-300 mt-2">Por: Autor 5</span>
+        </div>
+
+      
+        <div class="bg-cover bg-center h-64 rounded-lg shadow-lg text-white p-4 flex flex-col justify-end" style="background-image: url('https://via.placeholder.com/400');">
+          <a href="#post6" class="text-xl font-bold hover:underline">Título del Post 6</a>
+          <p class="text-sm mt-1">Subtítulo interesante del viaje</p>
+          <span class="text-xs text-gray-300 mt-2">Por: Autor 6</span>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white mt-10">
+    <div class="container mx-auto p-6 text-center">
+      <p class="text-sm">&copy; 2023 Blog de Viajes por la Tierra Media. Todos los derechos reservados.</p>
+      <div class="mt-4">
+        <a href="https://twitter.com" class="px-2 hover:text-gray-400 transition duration-300">Twitter</a> |
+        <a href="https://facebook.com" class="px-2 hover:text-gray-400 transition duration-300">Facebook</a> |
+        <a href="https://instagram.com" class="px-2 hover:text-gray-400 transition duration-300">Instagram</a>
       </div>
     </div>
-
+  </footer>
 
 </body>
 </html>
