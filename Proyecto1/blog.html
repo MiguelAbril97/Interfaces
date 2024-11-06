@@ -3,34 +3,53 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog de Viajes por la Tierra Media</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <title>Middle Traveler</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 text-gray-800 font-sans">
+<body class="text-gray-900 font-sans" style="background-color: #F5F5DC;">
 
   <!-- Header -->
-  <header class="bg-gray-900 text-white shadow-lg">
+  <header style="background-image: url('media/rivendell.jpg');" class="bg-cover bg-center h-[80vh] text-white flex flex-col justify-between shadow-lg">
     <div class="container mx-auto p-6 flex flex-col md:flex-row justify-between items-center">
-      <h1 class="text-3xl font-bold tracking-wide">Viajes por la Tierra Media</h1>
+      <h1 class="text-3xl font-bold tracking-wide">Middle Traveler</h1>
       <nav class="flex flex-row justify-evenly md:justify-between">
         <a href="#inicio" class="text-white px-4 py-2 rounded-md hover:bg-white hover:bg-opacity-20 transition duration-300">Inicio</a>
         <a href="#articulos" class="text-white px-4 py-2 rounded-md hover:bg-white hover:bg-opacity-20 transition duration-300">Artículos</a>
         <a href="#contacto" class="text-white px-4 py-2 rounded-md hover:bg-white hover:bg-opacity-20 transition duration-300">Contacto</a>
-      </nav>      
+      </nav>
     </div>
-  </header>  
-
-  <section class="bg-[url('media/rivendell.jpg')] bg-cover bg-center h-[80vh] text-white flex flex-col items-center justify-end text-center p-6">
-    <h2 class="text-5xl font-bold drop-shadow-lg mb-4">Explora la Tierra Media</h2>
-    <p class="text-lg max-w-2xl drop-shadow-md">
-      Adéntrate en los paisajes místicos y épicos de la Tierra Media. Desde las majestuosas torres de Minas Tirith hasta los verdes valles de Rivendel, cada rincón tiene una historia que contar. Únete a nuestra travesía y descubre los secretos, leyendas y maravillas de este mundo fascinante.
-    </p>
-  </section>
+  
+    <!-- Contenido principal dentro del header con la misma imagen de fondo -->
+    <div class="flex flex-col items-center justify-end text-center p-6">
+      <h2 class="text-5xl font-bold drop-shadow-lg mb-4">Explora la Tierra Media</h2>
+      <p class="text-lg max-w-2xl drop-shadow-md">
+        Adéntrate en los paisajes místicos y épicos de la Tierra Media. Desde las majestuosas torres de Minas Tirith hasta los verdes valles de Rivendel, cada rincón tiene una historia que contar. Únete a nuestra travesía y descubre los secretos, leyendas y maravillas de este mundo fascinante.
+      </p>
+    </div>
+  </header>
+  
 
  
-  <main class="container mx-auto p-6" style="background-color: #F5F5DC;">
+  <main class="container mx-auto p-6">
 
-   
+    <div class="bg-[#E3D5C6] shadow-2xl rounded-lg overflow-hidden flex flex-col md:flex-row max-w-5xl mx-auto my-12">
+      <!-- Columna de Imagen de Fondo -->
+      <div class="md:w-full bg-[url('media/rivendell.jpg')] bg-cover bg-center h-80 md:h-auto"></div>
+    
+      <!-- Columna de Texto -->
+      <div class="p-8 flex flex-col justify-center md:w-1/3">
+        <p class="text-sm text-gray-500 font-semibold mb-2 uppercase">Destacado</p>
+        <h2 class="text-4xl font-bold text-gray-900 mb-4 leading-tight">Una Tarde en Rivendel: El Refugio de los Primeros Nacidos</h2>
+        <p class="text-gray-700 mb-4">
+          "Entre canciones antiguas y una paz que parece eterna, descubrí que Rivendel no es solo un lugar; es un susurro de tiempos inmemoriales que aguarda a todo viajero con un corazón dispuesto a escuchar."
+        </p>
+        <p class="text-gray-500 text-sm">Bilbo Bolson</p>
+      </div>
+    </div>
+    
+    
+
+
     <section id="articulos" class="flex flex-col mt-8">
       <h3 class="text-2xl font-semibold mb-4">Últimos Artículos</h3>
      
@@ -84,7 +103,7 @@
   </main>
 
   <!-- Footer -->
-  <footer class="bg-gray-800 text-white mt-10">
+  <footer class="bg-[#3A5A40] text-white mt-10">
     <div class="container mx-auto p-6 text-center">
       <p class="text-sm">&copy; 2023 Blog de Viajes por la Tierra Media. Todos los derechos reservados.</p>
       <div class="mt-4">
