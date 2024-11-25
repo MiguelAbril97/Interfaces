@@ -9,13 +9,12 @@
 <body>
   <!-- Header -->
   <header class="container py-3">
-    <div class="row align-items-center">
-      <!-- Logo -->
-      <div class="col-12 col-md-6 text-center text-md-start">
-        <img src="logo.png" alt="Logo de la Tienda" class="img-fluid" style="max-width: 150px;">
-      </div>
+    <div class="row align-items-center h-50">
+      
+      <img src="media/logo.jpeg" alt="Logo de la Tienda" class="col-12 col-md-6 img-fluid h-75">
+      
       <!-- Barra de Navegación -->
-      <nav class="col-12 col-md-6 mt-3 mt-md-0">
+      <nav class="col-8 col-md-6 mt-3 mt-md-0">
         <ul class="nav justify-content-center justify-content-md-end">
           <li class="nav-item">
             <a class="nav-link text-dark" href="#">Inicio</a>
@@ -34,39 +33,42 @@
     </div>
   </header>
   
+  
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="Slide 1">
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="media/un libro de hechizos.jpeg" class="d-block w-100 h-50" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://picsum.photos/id/240/500/200" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://picsum.photos/id/250/500/200" class="d-block w-100" alt="...">
+        </div>
       </div>
-      <div class="carousel-item">
-        <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="Slide 2">
-      </div>
-      <div class="carousel-item">
-        <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="Slide 3">
-      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
   
   <!-- Grid de Productos -->
   <main class="container">
     <div class="row g-4">
       <!-- Tarjeta de Producto -->
       <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+     
         <div class="card h-100">
-          <img src="producto1.jpg" class="card-img-top" alt="Producto 1">
+          <img src="media/logo.jpeg" class="card-img-top" alt="Producto 1">
           <div class="card-body text-center">
             <h5 class="card-title">Producto 1</h5>
             <p class="card-text text-success">$19.99</p>
