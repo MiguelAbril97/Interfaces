@@ -46,6 +46,13 @@
     </div>
 </header>
 
+<div class="container-fluid p-0 mb-3 bg-secondary">
+  <div class="text-white text-center py-4">
+    <h2 class="mb-0">Productos Destacados</h2>
+  </div>
+</div>
+
+
 <!-- Carrusel -->
 <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-indicators">
@@ -76,8 +83,45 @@
   </button>
 </div>
 
-
+<div class="container-fluid my-3">
+  <div class="bg-success text-white text-center py-4">
+    <h2>Más Vendidos</h2>
+  </div>
+</div>
   
+<!-- Filtro de Productos -->
+<div class="container mb-4">
+  <form class="row g-3">
+    <div class="col-md-4">
+      <label for="categoryFilter" class="form-label">Categoría</label>
+      <select class="form-select" id="categoryFilter">
+        <option selected>Selecciona una categoría</option>
+        <option value="1">Anillos</option>
+        <option value="2">Varas</option>
+        <option value="3">Espadas</option>
+        <option value="4">Libros</option>
+      </select>
+    </div>
+    <div class="col-md-4">
+      <label for="priceFilter" class="form-label">Precio</label>
+      <select class="form-select" id="priceFilter">
+        <option selected>Selecciona un rango de precios</option>
+        <option value="1">$0 - $20</option>
+        <option value="2">$20 - $50</option>
+        <option value="3">$50 - $100</option>
+      </select>
+    </div>
+    <div class="col-md-4">
+      <label for="popularityFilter" class="form-label">Popularidad</label>
+      <select class="form-select" id="popularityFilter">
+        <option selected>Ordenar por popularidad</option>
+        <option value="1">Más populares</option>
+        <option value="2">Menos populares</option>
+      </select>
+    </div>
+  </form>
+</div>
+
   <!-- Grid de Productos -->
   <main class="container my-2">
     <div class="row g-4">
